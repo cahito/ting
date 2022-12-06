@@ -7,7 +7,7 @@ class Queue:
         return self.__length
 
     def __str__(self):
-       return str(self._data)
+        return str(self._data)
 
     def enqueue(self, value):
         self._data.append(value)
