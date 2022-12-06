@@ -1,4 +1,4 @@
-# import sys
+import sys
 from ting_file_management.file_management import txt_importer
 from ting_file_management.queue import Queue
 
@@ -29,4 +29,7 @@ def remove(instance: Queue):
 
 
 def file_metadata(instance: Queue, position: int):
-    """Aqui irá sua implementação"""
+    try:
+        print(instance.search(position))
+    except IndexError:
+        print('Posição inválida', file=sys.stderr)
