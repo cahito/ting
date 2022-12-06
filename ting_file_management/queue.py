@@ -6,6 +6,9 @@ class Queue:
     def __len__(self):
         return self.__length
 
+    def __str__(self):
+       return str(self._data)
+
     def enqueue(self, value):
         self._data.append(value)
         self.__length += 1
@@ -17,5 +20,5 @@ class Queue:
 
     def search(self, index):
         if index not in range(len(self)):
-            raise IndexError('Elemento inexistente')
+            raise IndexError("Elemento inexistente")
         return self._data[index]
