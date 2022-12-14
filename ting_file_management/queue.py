@@ -8,9 +8,6 @@ class Queue:
     def __len__(self):
         return len(self._data)
 
-    # def __str__(self):
-    #    return str(self._data)
-
     def __iter__(self):
         return iter(self._data)
 
