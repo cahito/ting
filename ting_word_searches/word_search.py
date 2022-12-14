@@ -9,7 +9,7 @@ def exists_word(word: str, instance: Queue, com_linha: bool = False):
             for idx, linha in enumerate(arquivo["linhas_do_arquivo"], start=1)
             if word.lower() in linha.lower()
         ]
-        if com_linha == False:
+        if com_linha is False:
             for cada in ocorrencias:
                 cada.pop("conteudo")
 
